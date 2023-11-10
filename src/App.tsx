@@ -7,6 +7,7 @@ import {
   LocaleResource,
 } from "@dynamic-labs/sdk-react-core";
 import { EthereumWalletConnectors } from "@dynamic-labs/ethereum";
+import SignMessage from "./SignMessage";
 
 function App() {
   const signMessageCopy: LocaleResource = {
@@ -28,6 +29,7 @@ function App() {
         locale={signMessageCopy}
       >
         <DynamicWidget />
+        <SignMessage />
       </DynamicContextProvider>
     </div>
   );
