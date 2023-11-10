@@ -2,19 +2,17 @@ import { useState } from "react";
 import { useDynamicContext } from "@dynamic-labs/sdk-react-core";
 
 const SignMessage = () => {
-  const [signature, setSignature] = useState(null);
+  const [signature, setSignature] = useState("");
   const { isAuthenticated, primaryWallet } = useDynamicContext();
 
   const signMessage = async () => {
     const connector = primaryWallet?.connector;
     if (!connector) return;
 
-    const signer: any = await connector.getSigner();
-
     const message = "Hello World";
 
-    const signature = await signer.signMessage(message);
-    setSignature(signature);
+    const signature = await connector.signMessage(message);
+    setSignature(signature || "");
 
     return;
   };
