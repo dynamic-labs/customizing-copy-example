@@ -15,7 +15,7 @@ function App() {
         title: {
           all: "Log in or sign up",
           all_wallet_list: "Select your wallet",
-          wallet_only: "Select your wallet",
+          wallet_only: "Find your favorite",
         },
       },
     },
