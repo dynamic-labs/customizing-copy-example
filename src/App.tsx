@@ -12,9 +12,12 @@ import SignMessage from "./SignMessage";
 function App() {
   const signMessageCopy: LocaleResource = {
     en: {
-      dyn_sign_message: {
-        sign_button: "Confirm",
-        title: "Confirm it's you to continue",
+      dyn_login: {
+        title: {
+          all: "Log in or sign up",
+          all_wallet_list: "Select your favourite",
+          wallet_only: "Select your favourite",
+        },
       },
     },
   };
