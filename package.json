@@ -1,5 +1,5 @@
 {
-  "name": "customizing-copy-example",
+  "name": "@dynamic-labs/customizing-copy-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
